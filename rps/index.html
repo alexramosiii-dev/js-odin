@@ -3,8 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Title</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="javascript.js"></script>
+  <script src="app.js" defer></script>
+
+  
+
+  <div id="main">
+    <div class="container-announcer">
+      <p id="announcer">First to get 3 points wins the game.</p>
+    </div>
+
+    <div class="container-stage">
+
+      <div>
+        <p id="score-text-player">0</p>
+        <div id="player-box" class="black-border imageHolder"></div>
+      </div>
+
+      <div>
+        <p id="score-text-computer">0</p>
+        <div id="computer-box" class="black-border imageHolder"></div>
+      </div>
+    </div>
+    <div class="container-play-btn">
+      <button id="btn-play" class="black-border">Play</button>
+    </div>
+    <div class="container-weapon">
+      <button style='background-image: url("./images/rock.png")'class="black-border imageHolder" data-weapon="rock"></button>
+      <button style='background-image: url("./images/paper.png")'class="black-border imageHolder" data-weapon="paper"></button>
+      <button style='background-image: url("./images/scissor.png")'class="black-border imageHolder" data-weapon="scissor"></button>
+    </div>
+
+    <div class="container-reset-btn">
+      <button id="btn-reset" class="black-border">Reset</button>
+    </div>
+  </div>
 </body>
 </html>
